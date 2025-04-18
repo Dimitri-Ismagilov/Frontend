@@ -1,0 +1,1 @@
+const ProjectCard = ({ project}) => 
