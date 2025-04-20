@@ -1,14 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Logotype from "../../partials/sections/Logotype";
-import SideBar from "../../partials/sections/SideBar";
 import Header from "../../partials/sections/Header";
+import Sidebar from "../../partials/sections/SideBar";
 
-const Layout = () => {
+const PortalLayout = () => {
     return (
-        <div className="wrapper">
-            <Logotype />
-            <SideBar />
+        <div className="wrapper-portal">
+            <Sidebar />
             <Header />
             <main>
                 <Outlet />
@@ -17,4 +15,4 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default PortalLayout
