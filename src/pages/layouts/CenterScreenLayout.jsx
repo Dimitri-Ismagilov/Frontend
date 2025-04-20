@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const AuthLayout = () => {
+const CenterScreenLayout = () => {
     return (
-        <div className="auth-wrapper">
+        <div className="wrapper-centerscreen">
             <main>
                 <Outlet />
             </main>
@@ -11,4 +11,4 @@ const AuthLayout = () => {
     )
 }
 
-export default AuthLayout
+export default CenterScreenLayout

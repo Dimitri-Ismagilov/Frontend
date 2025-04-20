@@ -14,8 +14,11 @@ export const ClientsProvider = ({children}) =>{
     const getClients = async () => {
         setLoading(true)
         try {
-            const res = await fetch(apiUri)
-
+            const res = await fetch(apiUri, {
+                   headers: {
+                        "X-API-KEY": "ZGRmMThkZmMtODg2Zi00NmM4LTljZDEtYzUyN2VjYTE1YWJi" 
+                }
+            })
             if (res.ok){
                 const data = await res.json()
                 setClients(data)

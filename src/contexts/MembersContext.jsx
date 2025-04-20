@@ -4,13 +4,16 @@ export const MembersContext = createContext()
 export const MembersProvider = ({children}) => {
     const apiUri = "https://localhost:7107/api/members"
 
-    //jag
     const[members, setMembers] = useState([])
     const[loading, setLoading] = useState(false)
 
     const getMembers = async () => {
         setLoading(true)
-        const res = await fetch(apiUri)
+        const res = await fetch(apiUri, {
+            headers: {
+                "X-API-KEY": "ZGRmMThkZmMtODg2Zi00NmM4LTljZDEtYzUyN2VjYTE1YWJi"  
+            }
+        })
 
         if (res.ok) {
             const data = await res.json()
