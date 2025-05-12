@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const MembersContext = createContext()
 export const MembersProvider = ({children}) => {
-    const apiUri = "https://localhost:7107/api/members"
+    const apiUri = "https://dimawebapp-d4e9d5ahexdbc7bw.swedencentral-01.azurewebsites.net/api/users"
 
     const[members, setMembers] = useState([])
     const[loading, setLoading] = useState(false)

@@ -6,7 +6,7 @@ const Clients = () => {
 
   return (
     <div>
-      
+      <h1 className="h2">Clients</h1>
       {/* lodding delen plus att man konrolerar om det finns nånting i den */}
       {
         clients.map(client =>(
