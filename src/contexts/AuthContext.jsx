@@ -4,7 +4,7 @@ const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider =({ children }) => {
-    const apiEndpoint = "https://localhost:7107/api/auth"
+    const apiEndpoint = "https://dimawebapp-d4e9d5ahexdbc7bw.swedencentral-01.azurewebsites.net/api/auth"
     const defaultValues = { accessToken: null, role: "admin", isAuthenticated: true, loading: false }
     const [auth, setAuth] = useState(defaultValues)
 

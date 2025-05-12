@@ -718,24 +718,24 @@ section > .content {
 /* Modal Overlay (bakgrund) */
 .modal-overlay {
     position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: 1000;
   }
   
   /* Modal Content (lådan) */
   .modal-content {
-    position: relative;
     background: white;
     padding: 2rem;
     border-radius: 8px;
-    min-width: 400px;
-    max-width: 600px;
     width: 90%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
   }
   
   /* Stäng-knapp (X) */

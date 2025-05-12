@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const ClientsContext = createContext()
 export const ClientsProvider = ({children}) =>{
-    const apiUri = "https://localhost:7107/api/clients"
+    const apiUri = "https://dimawebapp-d4e9d5ahexdbc7bw.swedencentral-01.azurewebsites.net/api/clients"
 
     //bra att utveckla mer lägga till felmeddelande eller något annat
 

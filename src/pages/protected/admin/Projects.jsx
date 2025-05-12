@@ -10,7 +10,7 @@ const Projects = () => {
   const { projects, loading } = useContext(ProjectsContext)
   const [activeTab, setActiveTab] = useState("all")
   const completedProjects = projects.filter( (p) => p.status?.statusName === "COMPLETED")
-  const [ModalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
 
 
   return (
@@ -19,7 +19,7 @@ const Projects = () => {
         <h1 className="h2">Projects</h1>
         {/* <ModalButton type="add" target="#addProjectModal" text="Add Project" /> */}
         <ModalButton type="primary" onClick={() => setModalOpen(true)} text="Add Project" />
-        <AddProjectModal isOpen={ModalOpen} onClose={() => setModalOpen(false)} />
+        <AddProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
       </div>
       
       <div className="tabs">
